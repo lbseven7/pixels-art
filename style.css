@@ -1,0 +1,15 @@
+.color-palette {
+  background-color: rgb(252, 1, 1);
+}
+
+.color {
+  background-color: rgb(198, 252, 2);
+  height: 30px;
+  padding: 50px;
+  margin:  20px;
+  width: 30px;
+}
+
+#color-palette {
+  color: blue;
+}
