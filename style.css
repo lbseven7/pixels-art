@@ -3,13 +3,26 @@
 }
 
 .color {
-  background-color: rgb(198, 252, 2);
   height: 30px;
-  padding: 50px;
+  padding: 30px;
   margin:  20px;
   width: 30px;
+  border: 1px solid black;
 }
 
 #color-palette {
-  color: blue;
+  display:  flex;
+}
+
+#color-palette div:nth-child(1) {
+  background-color: #000;
+}
+#color-palette div:nth-child(2) {
+  background-color: rgb(252, 4, 4);
+}
+#color-palette div:nth-child(3) {
+  background-color: rgb(19, 6, 196);
+}
+#color-palette div:nth-child(4) {
+  background-color: rgb(8, 102, 21);
 }
