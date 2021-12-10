@@ -14,3 +14,5 @@ createPalette()
 const divFilho = document.getElementsByClassName("color")[0];
 console.log(divFilho);
 divFilho.className = "selected color";
+
+
