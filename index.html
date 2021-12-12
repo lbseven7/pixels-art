@@ -12,11 +12,25 @@
 
 <body>
   <h1 id="title">Paleta de Cores</h1>
-  <div id="color-palette"></div>
+  <div id="color-palette" onclick="pegaCor()"></div>
 
   <div>
     <button id="clear-board" onclick="meuBotaoLimpaCores()">Limpar</button>
   </div>
+  <input id=board-size type="text"> <button id="generate-board">VQV</button>
+  <div>
+
+
+  </div>
+
+  <div id="pixel-board">
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+    <div class="pixel"></div>
+  </div>
+
   <div id="pixel-board">
     <div class="pixel"></div>
     <div class="pixel"></div>
@@ -36,14 +50,6 @@
   <div id="pixel-board">
     <div class="pixel"></div>
     <div class="pixel"></div>
-    <div class="pixel" onclick="meuBotaoLimpaCores()"></div>
-    <div class="pixel"></div>
-    <div class="pixel"></div>
-  </div>
-
-  <div id="pixel-board">
-    <div class="pixel"></div>
-    <div class="pixel"></div>
     <div class="pixel"></div>
     <div class="pixel"></div>
     <div class="pixel"></div>
@@ -57,11 +63,12 @@
     <div class="pixel"></div>
 
   </div>
+
 
   <script src="script.js"></script>
-<strong>
+  <strong>
 
-</strong>
+  </strong>
   <footer>@leobarbosa - Turma 19C</footer>
 </body>
 
