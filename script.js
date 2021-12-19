@@ -1,3 +1,4 @@
+// Obtive ajuda de Dilenio Enderle
 let currentSelectColor = 'black'
 
 function handleColor(event) {
@@ -9,7 +10,7 @@ function handleColor(event) {
   currentSelectColor = window.getComputedStyle(currentDiv, null).getPropertyValue('background-color');
 
 }
-
+// Obtive ajuda de Dilenio Enderle
 function createPalette(colors) {
   const selectPalette = document.getElementById("color-palette");
 
@@ -25,12 +26,12 @@ function createPalette(colors) {
     selectPalette.appendChild(createDiv)
   }
 }
-
+// Obtive ajuda de Dilenio Enderle
 function handlePixel(event) {
   let divColorize = event.target
   divColorize.style.backgroundColor = currentSelectColor
 }
-
+// Obtive ajuda de Dilenio Enderle
 function creatBoard(size) {
 
   for (let index = 0; index < size; index += 1) {
@@ -50,11 +51,22 @@ function creatBoard(size) {
     boardPixels.appendChild(createPixels)
   }
 }
+// Obtive ajuda de Dilenio Enderle
+function clearBoard() {
+  let clear = document.querySelector('#clear-board')
+  clear.addEventListener('click', function (){
+    let pixel = document.querySelectorAll('.pixel')
+    for (let i = 0; i < pixel.length; i += 1) {
+      pixel[i].style.backgroundColor = 'white'
+    }
+  })
+}
 
 window.onload = function () {
   createPalette(['black', 'red', 'blue', 'green'])
-
+  clearBoard()
   creatBoard(5)
 }
+
 
 
