@@ -26,6 +26,11 @@ function createPalette(colors) {
   }
 }
 
+function handlePixel(event) {
+  let divColorize = event.target
+  divColorize.style.backgroundColor = currentSelectColor
+}
+
 function creatBoard(size) {
 
   for (let index = 0; index < size; index += 1) {
@@ -39,6 +44,7 @@ function creatBoard(size) {
       let rowBoard = document.getElementsByClassName(rowClass)[0];
       let pixelDiv = document.createElement('div')
       pixelDiv.className = 'pixel'
+      pixelDiv.addEventListener('click', handlePixel)
       rowBoard.appendChild(pixelDiv)
     }
     boardPixels.appendChild(createPixels)
