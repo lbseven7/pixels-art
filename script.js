@@ -63,7 +63,7 @@ function clearBoard() {
 }
 
 window.onload = function () {
-  createPalette(['black', 'red', 'blue', 'green'])
+  createPalette(['black', 'red', 'blue', 'yellow'])
   clearBoard()
   creatBoard(5)
 }
